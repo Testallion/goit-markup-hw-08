@@ -1,0 +1,16 @@
+.section {
+    /* Box model */
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.section__title {
+    color: var(--main-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 50px;
+}

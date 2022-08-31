@@ -1,0 +1,112 @@
+.footer {
+    /* Box model */
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: var(--second-background-color);
+}
+
+.footer-block-address {
+    margin-right: 70px;
+    flex-grow: 1;
+}
+
+.footer__logo {
+    /* Box model */
+    display: block;
+    margin-bottom: 20px;
+}
+
+.footer-address__item:not(:last-child) {
+    /* Box model */
+    margin-bottom: 9px;
+}
+
+
+.footer-address__link:hover,
+.footer-address__link:focus {
+    color: var(--primary-color);
+
+}
+
+.footer-address__link-map:hover,
+.footer-address__link-map:focus {
+    color: var(--primary-color);
+
+}
+
+.footer-address__link {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+.footer-address__link-map {
+    color: var(--second-color);
+    transition: color var(--transition-duration) var(--transition-timing-function),
+        background-color var(--transition-duration) var(--transition-timing-function);
+}
+
+.footer-address__link {
+    color: var(--second-color2);
+    transition: color var(--transition-duration) var(--transition-timing-function),
+        background-color var(--transition-duration) var(--transition-timing-function);
+}
+
+/* Invintation */
+.footer-invitation {
+    margin-right: 93px;
+}
+
+.footer-invitation__title {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: var(--second-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.footer-invitation-social__item {
+    width: 44px;
+    height: 44px;
+}
+
+.footer-invintation-social-list {
+    display: flex;
+    gap: var(--social-list-gap)
+}
+
+.footer-invintation__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: var(--title-inverse-color);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transition: color var(--transition-duration) var(--transition-timing-function),
+        background-color var(--transition-duration) var(--transition-timing-function);
+
+}
+
+.footer-invintation__icon {
+    display: block;
+    fill: currentColor;
+    width: 20px;
+    height: 20px;
+}
+
+.footer__wrap {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer-invintation__link:hover,
+.footer-invintation__link:focus {
+    color: var(--second-color);
+    background-color: var(--primary-background-color);
+}
