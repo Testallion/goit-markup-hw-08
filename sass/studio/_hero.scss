@@ -1,8 +1,6 @@
 .hero {
-    lalala
     background-color: var(--second-background-color);
     text-align: center;
-    /* Box model */
     max-width: 1600px;
     margin: 0 auto;
     padding-top: 118px;
@@ -52,7 +50,6 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
     text-align: center;
-    /* Box model */
     margin-top: 0;
     margin-bottom: 30px;
 
@@ -62,7 +59,6 @@
     }
 }
 
-/* Hero button */
 .hero__btn {
     margin-right: auto;
     margin-left: auto;
