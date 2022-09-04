@@ -6,8 +6,20 @@
 }
 
 .footer-block-address {
-    margin-right: 70px;
-    flex-grow: 1;
+
+    @media screen and (min-width: 768px) {
+        margin-right: 165px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        flex-grow: 1;
+        margin-right: 70px;
+        text-align: start;
+    }
+
+    @media screen and (max-width: calc(1200px - 1px)) {
+        margin-bottom: 60px;
+    }
 }
 
 .footer__logo {
@@ -16,17 +28,22 @@
     margin-bottom: 20px;
 }
 
-.footer-address__item:not(:last-child) {
-    /* Box model */
-    margin-bottom: 9px;
+
+.footer-address__item {
+    &:not(:last-child) {
+        margin-bottom: 8px;
+
+        @media screen and (min-width: 1200px) {
+            margin-bottom: 9px;
+        }
+    }
 }
 
 
-.footer-address__link:hover,
-.footer-address__link:focus {
-    color: var(--primary-color);
-
+.footer__address {
+    font-style: normal;
 }
+
 
 .footer-address__link-map:hover,
 .footer-address__link-map:focus {
@@ -35,39 +52,54 @@
 }
 
 .footer-address__link {
-    font-style: normal;
+
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+    color: var(--second-color2);
+    transition: color var(--transition-duration) var(--transition-timing-function);
+    &:hover,
+    &:focus {
+    color: var(--primary-color);
+    }
 }
 
 .footer-address__link-map {
     color: var(--second-color);
     transition: color var(--transition-duration) var(--transition-timing-function),
-        background-color var(--transition-duration) var(--transition-timing-function);
+    background-color var(--transition-duration) var(--transition-timing-function);
 }
 
 .footer-address__link {
     color: var(--second-color2);
     transition: color var(--transition-duration) var(--transition-timing-function),
-        background-color var(--transition-duration) var(--transition-timing-function);
+    background-color var(--transition-duration) var(--transition-timing-function);
 }
 
 /* Invintation */
 .footer-invitation {
-    margin-right: 93px;
+
+    @media screen and (max-width: calc(1200px - 1px)) {
+        margin-bottom: 60px;
+    }
+    @media screen and (min-width: 1200px) {
+        margin-right: 93px;
+    }
+
 }
 
+
 .footer-invitation__title {
-    margin-top: 0;
-    margin-bottom: 20px;
-    color: var(--second-color);
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-}
+        margin-top: 0;
+        margin-bottom: 20px;
+        color: var(--second-color);
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+    }
+
 
 .footer-invitation-social__item {
     width: 44px;
@@ -76,7 +108,9 @@
 
 .footer-invintation-social-list {
     display: flex;
-    gap: var(--social-list-gap)
+    gap: var(--social-list-gap);
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .footer-invintation__link {
@@ -89,8 +123,13 @@
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
     transition: color var(--transition-duration) var(--transition-timing-function),
-        background-color var(--transition-duration) var(--transition-timing-function);
+    background-color var(--transition-duration) var(--transition-timing-function);
 
+    &:hover,
+    &:focus {
+        color: var(--second-color);
+        background-color: var(--primary-background-color);
+        }
 }
 
 .footer-invintation__icon {
@@ -101,12 +140,33 @@
 }
 
 .footer__wrap {
-    display: flex;
-    align-items: baseline;
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: calc(768px - 1px)){
+        justify-content: center;
+    }
+
+    @media screen and (min-width: 1200px) {
+        flex-wrap: nowrap;
+        text-align: start;
+    }
 }
 
-.footer-invintation__link:hover,
-.footer-invintation__link:focus {
-    color: var(--second-color);
-    background-color: var(--primary-background-color);
+%footer-block-title {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 20px;
+
+    color: var(--title-inverse-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
 }
