@@ -29,7 +29,6 @@
     background-color: var(--main-background-color2);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-    transform: translate(-50%, -50%) scale(100%, 100%);
     transition: transform var(--transition-duration) var(--transition-timing-function);
 
     @media screen and (min-width: 480px) {
@@ -55,9 +54,6 @@
     }
 }
 
-// .is-hiden .modal {
-//     transform: translate(-50%, -50%) scale(0, 0);
-// }
 
 .modal__btn-close {
     position: absolute;
@@ -262,6 +258,7 @@
 }
 
 .subscription-form-title {
+    margin-top: 60px;
     @extend %footer-block-title;
     color: var(--second-color);
 }

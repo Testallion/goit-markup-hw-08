@@ -267,13 +267,6 @@ a {
             flex-direction: column;
   }
 }
-@media screen and (min-width: 768px) {
-  .header-contact {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-}
 
 @media screen and (max-width: 767px) {
   .header-contact__item:not(:first-child) {
@@ -455,11 +448,6 @@ a {
   background-color: var(--second-background-color);
 }
 
-@media screen and (min-width: 768px) {
-  .footer-block-address {
-    margin-right: 165px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .footer-block-address {
     -webkit-box-flex: 1;
@@ -467,11 +455,6 @@ a {
             flex-grow: 1;
     margin-right: 70px;
     text-align: start;
-  }
-}
-@media screen and (max-width: 1199px) {
-  .footer-block-address {
-    margin-bottom: 60px;
   }
 }
 
@@ -606,6 +589,8 @@ a {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 767px) {
@@ -943,7 +928,6 @@ button {
 .hero {
   background-color: var(--second-background-color);
   text-align: center;
-  /* Box model */
   max-width: 1600px;
   margin: 0 auto;
   padding-top: 118px;
@@ -999,7 +983,6 @@ button {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   text-align: center;
-  /* Box model */
   margin-top: 0;
   margin-bottom: 30px;
 }
@@ -1010,7 +993,6 @@ button {
   }
 }
 
-/* Hero button */
 .hero__btn {
   margin-right: auto;
   margin-left: auto;
@@ -1050,8 +1032,6 @@ button {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  -webkit-transform: translate(-50%, -50%) scale(100%, 100%);
-          transform: translate(-50%, -50%) scale(100%, 100%);
   -webkit-transition: -webkit-transform var(--transition-duration) var(--transition-timing-function);
   transition: -webkit-transform var(--transition-duration) var(--transition-timing-function);
   transition: transform var(--transition-duration) var(--transition-timing-function);
@@ -1340,6 +1320,7 @@ button {
 }
 
 .subscription-form-title {
+  margin-top: 60px;
   color: var(--second-color);
 }
 
@@ -1630,14 +1611,6 @@ button {
   .filter__list {
     margin-bottom: 50px;
   }
-}
-
-.filter__item {
-  /* Box model */
-  margin-top: 0px;
-}
-.filter__item:not(:last-child) {
-  margin-right: 8px;
 }
 
 .filter__btn.current {
